@@ -1,4 +1,20 @@
-local specs = dofile("specs.lua")
+local specs = {
+    rootMountPoint = "/mnt",
+    rootPart = "/dev/nvme0n1p8",
+	rootLabel = "ARCH",
+    esp = nil,
+	espMountPoint = "/mnt/boot",
+	espLabel = "ESP",
+	parallelDownloads = 30,
+	packages = {"base", "linux", "linux-firmware"},
+	bootLoader = "grub",
+	user = "arch",
+	hostname = "thebasement",
+	timezone = "Asia/Kolkata",
+	locale = "en_US.UTF-8 UTF-8",
+	lang = "en_US.UTF-8",
+}
+
 local formatRoot = string.format("mkfs.ext4 -L %s %s", specs.rootLabel, specs.rootPart)
 local formatESP = string.format("mkfs.fat -F 32 -L %s %s", specs.espLabel, specs.esp)
 local mountRoot = string.format("mount %s %s", specs.rootPart, specs.rootMountPoint)
