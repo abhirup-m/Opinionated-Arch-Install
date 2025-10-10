@@ -1,0 +1,16 @@
+return {
+    rootMountPoint = "/mnt",
+    rootPart = "/dev/nvme0n1p8",
+	rootLabel = "ARCH",
+    esp = nil,
+	espMountPoint = "/mnt/boot",
+	espLabel = "ESP",
+	parallelDownloads = 30,
+	packages = {"base", "linux", "linux-firmware"},
+	bootLoader = "grub",
+	user = "arch",
+	hostname = "thebasement",
+	timezone = "Asia/Kolkata",
+	locale = "en_US.UTF-8 UTF-8",
+	lang = "en_US.UTF-8",
+}
