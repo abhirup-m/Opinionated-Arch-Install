@@ -1,15 +1,15 @@
 local specs = {
-    rootMountPoint = "/mnt",
-    rootPart = "/dev/nvme0n1p8",
+	rootMountPoint = "/mnt",
+	rootPart = "/dev/nvme0n1p8",
 	rootLabel = "ARCH",
-    esp = nil,
-	espMountPoint = "/mnt/boot",
-	espLabel = "ESP",
-	parallelDownloads = 30,
-	packages = {"base", "linux", "linux-firmware", "fish"},
-	bootLoader = "grub",
+	esp = "/dev/nvme0n1p9",
+	espMountPoint = "/boot",
+	espLabel = nil,
+	parallelDownloads = 10,
+	packages = { "base", "linux", "linux-firmware"},
+	bootLoader = "systemdboot",
 	user = "arch",
-	userShell = "/bin/fish",
+	userShell = "/bin/bash",
 	hostname = "thebasement",
 	timezone = "Asia/Kolkata",
 	locale = "en_US.UTF-8 UTF-8",
@@ -24,22 +24,24 @@ steps[1] = {
 }
 steps[2] = {
 	command = string.format("mkfs.fat -F 32 -L %s %s", specs.espLabel, specs.esp),
-	desc = "formatESP"
+	desc = "formatESP",
+	disabled = espLabel == nil
 }
 steps[3] = {
 	command = string.format("mount %s %s", specs.rootPart, specs.rootMountPoint),
 	desc = "mountRoot"
 }
 steps[4] = {
-	command = string.format("mount --mkdir %s %s", specs.esp, specs.espMountPoint),
+	command = string.format("mount --mkdir %s %s%s", specs.esp, specs.rootMountPoint, specs.espMountPoint),
 	desc = "mountESP"
 }
 steps[5] = {
-	command = string.format("sed -i 's/^.*ParallelDownload.*$/ParallelDownloads = %s/' /etc/pacman.conf", specs.parallelDownloads),
+	command = string.format("sed -i 's/^.*ParallelDownload.*$/ParallelDownloads = %s/' /etc/pacman.conf",
+		specs.parallelDownloads),
 	desc = "enableParallelDownload"
 }
 steps[6] = {
-	command = string.format("pactstrap -P -K %s %s", specs.rootMountPoint, table.concat(specs.packages, " ")),
+	command = string.format("pacstrap -P -K %s %s", specs.rootMountPoint, table.concat(specs.packages, " ")),
 	desc = "pactstrap"
 }
 steps[7] = {
@@ -51,39 +53,69 @@ steps[8] = {
 	desc = "timezone"
 }
 steps[9] = {
-	command = string.format("useradd -m -G wheel %s -s %s && passwd %s", specs.user, specs.userShell, specs.user),
+	command = string.format("%s useradd -m -G wheel %s -s %s", chroot, specs.user, specs.userShell),
 	desc = "useradd"
 }
 steps[10] = {
-	command = "%s hwclock --systohc",
+	command = string.format("%s hwclock --systohc", chroot),
 	desc = "hwclock"
 }
 steps[11] = {
-	command = string.format("%s echo %s >> /etc/locale.gen", chroot, specs.locale),
+	command = string.format("echo %s >> %s/etc/locale.gen", specs.locale, specs.rootMountPoint),
 	desc = "locale"
 }
 steps[12] = {
-	command = "%s locale-gen",
+	command = string.format("%s locale-gen", chroot),
 	desc = "localeGen",
 }
 steps[13] = {
-	command = string.format("%s echo 'LANG = %s' > /etc/locale.conf", chroot, specs.lang),
+	command = string.format("echo 'LANG = %s' > %s/etc/locale.conf", specs.lang, specs.rootMountPoint),
 	desc = "lang"
 }
 steps[14] = {
-	command = string.format("%s echo %s > /etc/hostname", chroot, specs.hostname),
+	command = string.format("echo %s > %s/etc/hostname", specs.hostname, specs.rootMountPoint),
 	desc = "hostname"
 }
 steps[15] = {
 	command = string.format("%s passwd", chroot),
 	desc = "passwd"
 }
-
-for i = 1, 15 do
-	print(steps[i].desc)
-	local code = os.execute(steps[i].command)
-	if code ~= true then
-		os.exit()
-	end
+steps[16] = {
+	command = string.format("%s passwd %s", chroot, specs.user),
+}
+if specs.bootLoader == "grub" then
+	steps[17] = {
+		command = string.format("%s grub-install --efi-directory=%s", chroot, specs.espMountPoint),
+	}
+	steps[18] = {
+		command = string.format("%s grub-mkconfig -o %s/grub/grub.cfg", chroot, specs.espMountPoint),
+	}
+end
+if specs.bootLoader == "systemdboot" then
+	local loaderConf = "default\t\tarch.conf\ntimeout\t\t0.1"
+	local archConf = string.format(
+	"title\t\tArch Linux\nlinux\t\t/vmlinuz-linux\ninitrd\t\t/initramfs-linux.img\noptions\t\troot=LABEL=%s rw quiet",
+		specs.rootLabel)
+	steps[17] = {
+		command = string.format("%s bootctl install", chroot),
+	}
+	steps[18] = {
+		command = string.format(
+		"echo '%s' > %s%s/loader/loader.conf && mkdir -p %s%s/loader/entries && echo '%s' > %s%s/loader/entries/arch.conf",
+			loaderConf, specs.rootMountPoint, specs.espMountPoint, specs.rootMountPoint, specs.espMountPoint, archConf,
+			specs.rootMountPoint, specs.espMountPoint),
+	}
 end
 
+for i = 1, 18 do
+	if steps[i] ~= nil and steps[i].disabled ~= true then
+		print(steps[i].command)
+		local code = os.execute(steps[i].command)
+		if code ~= true then
+			break
+		end
+	else
+		print("Disabled.")
+	end
+end
+os.execute(string.format("umount -l %s", specs.rootMountPoint))
