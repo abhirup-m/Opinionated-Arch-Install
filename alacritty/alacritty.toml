@@ -1,0 +1,19 @@
+[window]
+
+opacity = 0.9
+
+padding.x = 10
+padding.y = 5
+
+decorations = "none"
+decorations_theme_variant = "Dark" # "Dark"
+dynamic_padding = true
+
+[font]
+
+normal.family = "JetBrainsMono Nerd Font Propo"
+bold.family = "JetBrainsMono Nerd Font Propo"
+italic.family = "JetBrainsMono Nerd Font Propo"
+bold_italic.family = "JetBrainsMono Nerd Font Propo"
+
+size = 12.0
