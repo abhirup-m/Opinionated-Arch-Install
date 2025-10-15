@@ -19,6 +19,10 @@ alias ls "tree -L 1 -C -h --du -a -D | column"
 alias mpython "$HOME/storage/miniconda3/bin/python"
 alias mpip "$HOME/storage/miniconda3/bin/pip"
 
+function ls
+    tree -L 1 -C -h --du -a -D $argv | column
+end
+
 #### START WAYLAND COMPOSITOR ####
 if status --is-login
 	if test -z "$DISPLAY" -a $XDG_VTNR = 1
