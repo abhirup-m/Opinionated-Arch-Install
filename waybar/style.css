@@ -1,0 +1,78 @@
+/* Colorscheme (jellybeans): */
+@define-color gray1 #1F1F28;
+@define-color gold #FEFBC7;
+@define-color green #FEB21A;
+@define-color purple #b47ede;
+@define-color red #FFECC0;
+@define-color blue #b4ceed;
+@define-color gray3 #bbbbbb;
+@define-color white #eeeeee;
+@define-color cyan #BF092F;
+
+* {
+	font-family: AgaveNerdFontPropo;
+	font-size: 18px;
+	background-color: @gray1;
+	color: @white;
+	padding: 0;
+	margin: 0;
+}
+#waybar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#cpu, #memory, #battery {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+#clock, #custom-lock, #custom-logout, #custom-reboot, #custom-poweroff, #tray {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+#exit * {
+	background-color: @green;
+	color: @gray1;
+}
+#hardware * {
+	background-color: @gold;
+	color: @gray1;
+}
+
+#tags button > label {
+	opacity: 0.3;
+}
+
+#tags button.focused {
+	background-color: @cyan;
+}
+
+#tags button.focused > label {
+	background-color: @cyan;
+}
+
+#tags button.occupied > label {
+	/* border-radius: 35px; */
+	/* padding: 5px; */
+	/* background-color: @cyan; */
+	opacity: 1;
+	font-weight: bold;
+}
+
+#tags button {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#window {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+

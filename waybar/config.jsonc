@@ -1,0 +1,96 @@
+// -*- mode: jsonc -*-
+{
+    "spacing": 0, // Gaps between modules (10px)
+    // Choose the order of the modules
+    "modules-left": [
+		"dwl/tags",
+        "dwl/window",
+    ],
+    "modules-center": [
+    ],
+
+	"group/exit": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/lock",
+			"custom/logout",
+			"custom/reboot",
+			"custom/poweroff"
+		]
+	},
+	"group/hardware": {
+		"orientation": "horizontal",
+			"modules": [
+				"cpu",
+				"memory",
+				"battery"
+			]
+	},
+	"custom/lock": {
+		"format": "",
+		"on-click": "waylock",
+        "tooltip-format": "Lock the computer."
+	},
+	"custom/logout": {
+		"format": "",
+		"on-click": "killall dwl",
+        "tooltip-format": "Logout."
+	},
+	"custom/reboot": {
+		"format": "",
+		"on-click": "systemctl reboot -i",
+        "tooltip-format": "Reboot."
+	},
+	"custom/poweroff": {
+		"format": "⏻",
+		"on-click": "systemctl poweroff -i",
+        "tooltip-format": "Poweroff."
+	},
+	"cpu": {
+        "format": " {usage}% ",
+        "interval": 2,
+        "states": {
+             "warning": 80,
+             "critical": 90
+        }
+    },
+	"dwl/tags": {
+		"num-tags": 6
+	},
+	"dwl/window": {
+		"format": "{title}",
+		"max-length": 100,
+		"icon": true,
+		"on-click": "grim"
+	},
+
+    "memory": {
+    	"interval": 2,
+        "states": {
+             "warning": 60,
+             "critical": 75
+    	},
+        "format": " {percentage}% ",
+        "tooltip-format": "{used}G used",
+        "on-click": "alacritty -e htop"
+    },
+	"clock": {
+		"format": " {:%b %d, %I:%M}",
+        "tooltip-format": "<big>{:%A %d}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%m/%Y}"
+    },
+	"battery": {
+		"format-charging": " {capacity}%",
+		"format-discharging": " {capacity}%"
+	},
+    "tray": {
+        "icon-size": 24,
+        "spacing": 16
+    },
+	"modules-right": [
+        "group/hardware",
+		"clock",
+        "group/exit",
+		"tray"
+	]
+}
