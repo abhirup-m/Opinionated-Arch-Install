@@ -1,3 +1,6 @@
 [submodule "bin"]
 	path = bin
 	url = git@github.com:abhirup-m/shell-scripts.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:abhirup-m/Neovim-Dotfiles.git
