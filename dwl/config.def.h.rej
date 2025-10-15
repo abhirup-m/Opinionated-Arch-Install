@@ -1,0 +1,24 @@
+--- config.def.h
++++ config.def.h
+@@ -13,7 +13,6 @@ static const float focuscolor[]            = COLOR(0x005577ff);
+ static const float urgentcolor[]           = COLOR(0xff0000ff);
+ /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
+ static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
+-static const float default_opacity         = 0.75;
+ 
+ /* tagging - TAGCOUNT must be no greater than 31 */
+ #define TAGCOUNT (9)
+@@ -23,10 +22,10 @@ static int log_level = WLR_ERROR;
+ 
+ /* NOTE: ALWAYS keep a rule declared even if you don't use rules (e.g leave at least one example) */
+ static const Rule rules[] = {
+-	/* app_id             title       tags mask     isfloating   alpha              monitor */
++	/* app_id             title       tags mask     isfloating   monitor */
+ 	/* examples: */
+-	{ "Gimp_EXAMPLE",     NULL,       0,            1,           default_opacity,   -1 }, /* Start on currently visible tags floating, not tiled */
+-	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           1.0,               -1 }, /* Start on ONLY tag "9" */
++	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
++	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
+ };
+ 
+ /* layout(s) */

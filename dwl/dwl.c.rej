@@ -1,0 +1,19 @@
+--- dwl.c
++++ dwl.c
+@@ -138,7 +138,6 @@ typedef struct {
+ 	unsigned int bw;
+ 	uint32_t tags;
+ 	int isfloating, isurgent, isfullscreen;
+-	float opacity;
+ 	uint32_t resize; /* configure serial of a pending resize */
+ } Client;
+ 
+@@ -500,8 +495,6 @@ applyrules(Client *c)
+ 			}
+ 		}
+ 	}
+-	if (c->scene_surface)
+-		wlr_scene_node_for_each_buffer(&c->scene_surface->node, scenebuffersetopacity, c);
+ 	setmon(c, mon, newtags);
+ }
+ 
