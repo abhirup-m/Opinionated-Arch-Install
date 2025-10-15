@@ -4,18 +4,19 @@ local specs = {
 	rootLabel = "ARCH",
 	esp = "/dev/nvme0n1p9",
 	espMountPoint = "/boot",
-	espLabel = nil,
-	parallelDownloads = 10,
-	packages = { "base", "linux", "linux-firmware"},
+	espLabel = "ESP",
+	parallelDownloads = 30,
 	bootLoader = "systemdboot",
 	user = "arch",
-	userShell = "/bin/bash",
+	userShell = "/bin/fish",
 	hostname = "thebasement",
 	timezone = "Asia/Kolkata",
 	locale = "en_US.UTF-8 UTF-8",
 	lang = "en_US.UTF-8",
+	enable = {"NetworkManager"}
 }
 
+specs["packages"] = dofile("packages.lua)
 local chroot = string.format("arch-chroot %s", specs.rootMountPoint)
 local steps = {}
 steps[1] = {
@@ -23,9 +24,9 @@ steps[1] = {
 	desc = "formatRoot"
 }
 steps[2] = {
-	command = string.format("mkfs.fat -F 32 -L %s %s", specs.espLabel, specs.esp),
+	command = string.format("mkfs.fat -F 32 -n %s %s", specs.espLabel, specs.esp),
 	desc = "formatESP",
-	disabled = espLabel == nil
+	disabled = specs.espLabel == nil
 }
 steps[3] = {
 	command = string.format("mount %s %s", specs.rootPart, specs.rootMountPoint),
@@ -106,8 +107,15 @@ if specs.bootLoader == "systemdboot" then
 			specs.rootMountPoint, specs.espMountPoint),
 	}
 end
+steps[19] = {
+	command = string.format("%s systemctl enable %s", chroot, table.concat(specs.enable, " ")),
+	desc = "systemd enable"
+}
+steps[20] = {
+	command = string.format("sed -i 's/^.*wheel ALL=(ALL:ALL) ALL.*$/%%wheel ALL=(ALL:ALL) ALL/' %s/etc/sudoers", specs.rootMountPoint)
+}
 
-for i = 1, 18 do
+for i = 1, 20 do
 	if steps[i] ~= nil and steps[i].disabled ~= true then
 		print(steps[i].command)
 		local code = os.execute(steps[i].command)
@@ -115,7 +123,7 @@ for i = 1, 18 do
 			break
 		end
 	else
-		print("Disabled.")
+		print(steps[i].disabled)
 	end
 end
 os.execute(string.format("umount -l %s", specs.rootMountPoint))
