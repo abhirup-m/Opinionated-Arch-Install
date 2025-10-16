@@ -5,6 +5,7 @@
     "modules-left": [
 		"dwl/tags",
         "dwl/window",
+		"custom/right"
     ],
     "modules-center": [
     ],
@@ -25,6 +26,21 @@
 				"memory",
 				"battery"
 			]
+	},
+	"custom/right": {
+		"format": ""
+	},
+	"custom/left1": {
+		"format": ""
+	},
+	"custom/left2": {
+		"format": ""
+	},
+	"custom/left3": {
+		"format": ""
+	},
+	"custom/left4": {
+		"format": ""
 	},
 	"custom/lock": {
 		"format": "",
@@ -58,9 +74,8 @@
 		"num-tags": 6
 	},
 	"dwl/window": {
-		"format": "{title}",
-		"max-length": 100,
-		"icon": true,
+		"format": " {title}",
+		"max-length": 50,
 		"on-click": "grim"
 	},
 
@@ -84,13 +99,17 @@
 		"format-discharging": " {capacity}%"
 	},
     "tray": {
-        "icon-size": 24,
+        "icon-size": 20,
         "spacing": 16
     },
 	"modules-right": [
+		"custom/left1",
         "group/hardware",
+		"custom/left2",
 		"clock",
+		"custom/left3",
         "group/exit",
+		"custom/left4",
 		"tray"
 	]
 }

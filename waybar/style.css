@@ -1,25 +1,26 @@
 /* Colorscheme (jellybeans): */
-@define-color gray1 #1F1F28;
-@define-color gold #FEFBC7;
-@define-color green #FEB21A;
+@define-color bgcol #282A36;
+@define-color col1 #50FA7B;
+@define-color col2 #FF79C6;
 @define-color purple #b47ede;
-@define-color red #FFECC0;
-@define-color blue #b4ceed;
+@define-color red #44475A;
+@define-color blue #BD93F9;
 @define-color gray3 #bbbbbb;
-@define-color white #eeeeee;
+@define-color white #F8F8F2;
 @define-color cyan #BF092F;
 
 * {
 	font-family: AgaveNerdFontPropo;
 	font-size: 18px;
-	background-color: @gray1;
+	background-color: @bgcol;
 	color: @white;
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin-top: -6px;
+	margin-bottom: -6px;
 }
 #waybar {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 #cpu, #memory, #battery {
@@ -30,20 +31,27 @@
 	font-weight: bold;
 }
 #clock, #custom-lock, #custom-logout, #custom-reboot, #custom-poweroff, #tray {
-	padding-left: 8px;
-	padding-right: 8px;
-	margin-left: 8px;
-	margin-right: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/* margin-left: 8px; */
+	/* margin-right: 8px; */
 	font-weight: bold;
+}
+#tray {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#clock {
+	background-color: @red;
 }
 
 #exit * {
-	background-color: @green;
-	color: @gray1;
+	background-color: @col2;
+	color: @bgcol;
 }
 #hardware * {
-	background-color: @gold;
-	color: @gray1;
+	background-color: @col1;
+	color: @bgcol;
 }
 
 #tags button > label {
@@ -59,9 +67,6 @@
 }
 
 #tags button.occupied > label {
-	/* border-radius: 35px; */
-	/* padding: 5px; */
-	/* background-color: @cyan; */
 	opacity: 1;
 	font-weight: bold;
 }
@@ -72,7 +77,43 @@
 }
 
 #window {
+	margin-left: 10px;
 	padding-left: 20px;
-	padding-right: 10px;
+	padding-right: 20px;
+	background-color: @blue;
+	/* font-style: italic; */
 }
-
+#window * {
+	background-color: @blue;
+	color: @bgcol;
+}
+#custom-right, #custom-left1, #custom-left2, #custom-left3, #custom-left4 {
+	padding: 0;
+	margin: 0;
+}
+#custom-right {
+	font-size: 2em;
+	margin-left: -12px;
+	color: @blue;
+	background-color: @bgcol;
+}
+#custom-left1, #custom-left2, #custom-left3, #custom-left4 {
+	margin-right: -1px;
+	font-size: 2.7em;
+}
+#custom-left1 {
+	color: @col1;
+	background-color: @bgcol;
+}
+#custom-left2 {
+	color: @red;
+	background-color: @col1;
+}
+#custom-left3 {
+	color: @col2;
+	background-color: @red;
+}
+#custom-left4 {
+	color: @bgcol;
+	background-color: @col2;
+}
