@@ -16,6 +16,7 @@ static const float focuscolor[]            = COLOR(0x005677ff);
 static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You can also use glsl colors */
+const char *activeGeomPath = "/tmp/dwl-active";
 
 /* tagging - TAGCOUNT must be no greater than 31 */
 #define TAGCOUNT (6)
@@ -32,6 +33,7 @@ static const Rule rules[] = {
 	{NULL,			"Neovim",      1 << 3,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
 	{"Evince",		NULL,          1 << 4,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
 	{"mpv",			NULL,          		0,   0,	    1,  -1 }, /* Start on ONLY tag "9" */
+	{"gscreenshot",	NULL,          		0,   0,	    1,  -1 }, /* Start on ONLY tag "9" */
 };
 
 /* layout(s) */
@@ -152,7 +154,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_slash,          setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                    XKB_KEY_space,      setlayout,      {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_space,      togglefloating, {0} },
-	{ MODKEY,                    XKB_KEY_e,         togglefullscreen, {0} },
+	{ MODKEY,                    XKB_KEY_f,         togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_0,          view,           {.ui = ~0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_parenright, tag,            {.ui = ~0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_comma,      focusmon,       {.i = WLR_DIRECTION_LEFT} },

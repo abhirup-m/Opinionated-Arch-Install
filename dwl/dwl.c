@@ -306,6 +306,7 @@ static void dwl_ipc_output_set_layout(struct wl_client *client, struct wl_resour
 static void dwl_ipc_output_set_tags(struct wl_client *client, struct wl_resource *resource, uint32_t tagmask, uint32_t toggle_tagset);
 static void dwl_ipc_output_release(struct wl_client *client, struct wl_resource *resource);
 static void focusclient(Client *c, int lift);
+static void writeGeometry(Client *c);
 static void focusmon(const Arg *arg);
 static void focusstack(const Arg *arg);
 static Client *focustop(Monitor *m);
@@ -580,6 +581,7 @@ arrange(Monitor *m)
 		m->lt[m->sellt]->arrange(m);
 	motionnotify(0, NULL, 0, 0, 0, 0);
 	checkidleinhibitor(NULL);
+	writeGeometry(focustop(selmon));
 }
 
 void
@@ -1704,6 +1706,22 @@ focusclient(Client *c, int lift)
 
 	/* Activate the new client */
 	client_activate_surface(client_surface(c), 1);
+
+	writeGeometry(c);
+}
+
+void 
+writeGeometry(Client *c)
+{
+	if (c) {
+		FILE *fp = fopen(activeGeomPath, "w");
+		if (fp) {
+			fprintf(fp, "%d,%d %dx%d\n",
+					c->geom.x, c->geom.y,
+					c->geom.width, c->geom.height);
+			fclose(fp);
+		}
+	}
 }
 
 void
@@ -3420,7 +3438,6 @@ xwaylandready(struct wl_listener *listener, void *data)
 				xcursor->images[0]->hotspot_x, xcursor->images[0]->hotspot_y);
 }
 #endif
-
 int
 main(int argc, char *argv[])
 {
