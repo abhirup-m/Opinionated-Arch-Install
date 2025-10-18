@@ -28,7 +28,7 @@ static int log_level = WLR_ERROR;
 static const Rule rules[] = {
 	/* app_id        title         tags     swith float  mon */
 	{NULL,  		"Brave",       1 << 0,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
-	{"caja",		NULL,          1 << 1,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
+	{"pcmanfm",		NULL,          1 << 1,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
 	{"Alacritty",  	"Alacritty",   1 << 2,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
 	{NULL,			"Neovim",      1 << 3,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
 	{"Evince",		NULL,          1 << 4,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
@@ -136,7 +136,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_a,          spawn,          {.v = menucmd} },
 	{ MODKEY, 					 XKB_KEY_t,     	 spawn,          {.v = termcmd} },
 	{ MODKEY, 					 XKB_KEY_b,     	 spawn,          SHCMD("brave") },
-	{ MODKEY, 					 XKB_KEY_e,     	 spawn,          SHCMD("caja") },
+	{ MODKEY, 					 XKB_KEY_e,     	 spawn,          SHCMD("pcmanfm --name=pcmanfm") },
 	{ MODKEY, 					 XKB_KEY_s,     	 spawn,          SHCMD("alacritty -T Neovim -e nvim") },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_b,          togglebar,      {0} },
 	{ MODKEY,                    XKB_KEY_Left,          focusstack,     {.i = +1} },
