@@ -16,7 +16,7 @@ static const float focuscolor[]            = COLOR(0x005677ff);
 static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You can also use glsl colors */
-const char *activeGeomPath = "/tmp/dwl-active";
+const char *clientsGeomPath = "/tmp/dwl-clients";
 
 /* tagging - TAGCOUNT must be no greater than 31 */
 #define TAGCOUNT (6)
