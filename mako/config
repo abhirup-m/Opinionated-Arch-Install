@@ -1,0 +1,35 @@
+# Dracula Theme for mako
+# ~/.config/mako/config
+
+# === Colors ===
+background-color=#282a36
+text-color=#f8f8f2
+border-color=#bd93f9
+progress-color=#6272a4
+
+# === Layout ===
+width=300
+height=100
+padding=10
+border-size=2
+border-radius=8
+
+# === Fonts ===
+font=Go Regular 12
+
+# === Behavior ===
+default-timeout=5000
+ignore-timeout=0
+layer=overlay
+anchor=top-center
+text-alignment=center
+icon-path=/usr/share/icons/Numix
+
+# === Urgency Levels ===
+[urgency=low]
+border-color=#6272a4
+text-color=#8be9fd
+
+[urgency=normal]
+border-color=#bd93f9
+text-color=#f8f8f2
