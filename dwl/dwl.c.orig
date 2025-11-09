@@ -239,7 +239,6 @@ typedef struct {
 	uint32_t tags;
 	bool switchtotag;
 	int isfloating;
-	float opacity;
 	int monitor;
 } Rule;
 
@@ -307,6 +306,7 @@ static void dwl_ipc_output_set_layout(struct wl_client *client, struct wl_resour
 static void dwl_ipc_output_set_tags(struct wl_client *client, struct wl_resource *resource, uint32_t tagmask, uint32_t toggle_tagset);
 static void dwl_ipc_output_release(struct wl_client *client, struct wl_resource *resource);
 static void focusclient(Client *c, int lift);
+static void writeGeometry();
 static void focusmon(const Arg *arg);
 static void focusstack(const Arg *arg);
 static Client *focustop(Monitor *m);
@@ -343,7 +343,6 @@ static void requeststartdrag(struct wl_listener *listener, void *data);
 static void requestmonstate(struct wl_listener *listener, void *data);
 static void resize(Client *c, struct wlr_box geo, int interact);
 static void run(char *startup_cmd);
-static void scenebuffersetopacity(struct wlr_scene_buffer *buffer, int sx, int sy, void *user_data);
 static void setcursor(struct wl_listener *listener, void *data);
 static void setcursorshape(struct wl_listener *listener, void *data);
 static void setfloating(Client *c, int floating);
@@ -351,7 +350,6 @@ static void setfullscreen(Client *c, int fullscreen);
 static void setlayout(const Arg *arg);
 static void setmfact(const Arg *arg);
 static void setmon(Client *c, Monitor *m, uint32_t newtags);
-static void setopacity(const Arg *arg);
 static void setpsel(struct wl_listener *listener, void *data);
 static void setsel(struct wl_listener *listener, void *data);
 static void setup(void);
@@ -521,7 +519,6 @@ applyrules(Client *c, bool map)
 		if ((!r->title || strstr(title, r->title))
 				&& (!r->id || strstr(appid, r->id))) {
 			c->isfloating = r->isfloating;
-			c->opacity = r->opacity;
 			newtags |= r->tags;
 			i = 0;
 			wl_list_for_each(m, &mons, link) {
@@ -542,11 +539,8 @@ applyrules(Client *c, bool map)
 		c->geom.y = (mon->w.height - c->geom.height) / 2 + mon->w.y;
 	}
 
-	if (c->scene_surface)
-		wlr_scene_node_for_each_buffer(&c->scene_surface->node, scenebuffersetopacity, c);
 	c->isfloating |= client_is_float_type(c);
 	setmon(c, mon, newtags);
-	setopacity(c);
 }
 
 void
@@ -587,6 +581,7 @@ arrange(Monitor *m)
 		m->lt[m->sellt]->arrange(m);
 	motionnotify(0, NULL, 0, 0, 0, 0);
 	checkidleinhibitor(NULL);
+	writeGeometry();
 }
 
 void
@@ -930,9 +925,6 @@ commitnotify(struct wl_listener *listener, void *data)
 
 	resize(c, c->geom, (c->isfloating && !c->isfullscreen));
 
-	if (c->scene_surface)
-		wlr_scene_node_for_each_buffer(&c->scene_surface->node, scenebuffersetopacity, c);
-
 	/* mark a pending resize as completed */
 	if (c->resize && c->resize <= c->surface.xdg->current.configure_serial)
 		c->resize = 0;
@@ -1184,7 +1176,6 @@ createnotify(struct wl_listener *listener, void *data)
 	c = toplevel->base->data = ecalloc(1, sizeof(*c));
 	c->surface.xdg = toplevel->base;
 	c->bw = borderpx;
-	c->opacity = default_opacity;
 
 	LISTEN(&toplevel->base->surface->events.commit, &c->commit, commitnotify);
 	LISTEN(&toplevel->base->surface->events.map, &c->map, mapnotify);
@@ -1715,6 +1706,27 @@ focusclient(Client *c, int lift)
 
 	/* Activate the new client */
 	client_activate_surface(client_surface(c), 1);
+
+	writeGeometry();
+}
+
+void 
+writeGeometry()
+{
+	FILE *fp = fopen(clientsGeomPath, "w");
+	Client *c;
+	wl_list_for_each(c, &clients, link)
+		if (c == focustop(selmon))
+			fprintf(fp, "* %s %s: %d,%d %dx%d\n",
+					client_get_appid(c), client_get_title(c),
+					c->geom.x, c->geom.y,
+					c->geom.width, c->geom.height);
+		else
+			fprintf(fp, "%s %s: %d,%d %dx%d\n",
+					client_get_appid(c), client_get_title(c),
+					c->geom.x, c->geom.y,
+					c->geom.width, c->geom.height);
+	fclose(fp);
 }
 
 void
@@ -2022,7 +2034,18 @@ mapnotify(struct wl_listener *listener, void *data)
 	c->geom.height += 2 * c->bw;
 
 	/* Insert this client into client lists. */
-	wl_list_insert(&clients, &c->link);
+	i = 0;
+	wl_list_for_each(w, &clients, link) {
+		if (!VISIBLEON(w, selmon) || w->isfloating)
+			continue;
+		p = w;
+		if (++i >= selmon->nmaster)
+			break;
+	}
+	if (i > 0)
+		wl_list_insert(&p->link, &c->link);
+	else
+		wl_list_insert(&clients, &c->link);
 	wl_list_insert(&fstack, &c->flink);
 
 	/* Set initial monitor, tags, floating status, and focus:
@@ -2515,15 +2538,6 @@ run(char *startup_cmd)
 }
 
 void
-scenebuffersetopacity(struct wlr_scene_buffer *buffer, int sx, int sy, void *data)
-{
-	Client *c = data;
-	/* xdg-popups are children of Client.scene, we do not have to worry about
-	   messing with them. */
-	wlr_scene_buffer_set_opacity(buffer, c->isfullscreen ? 1 : c->opacity);
-}
-
-void
 setcursor(struct wl_listener *listener, void *data)
 {
 	/* This event is raised by the seat when a client provides a cursor image */
@@ -2591,7 +2605,6 @@ setfullscreen(Client *c, int fullscreen)
 		 * client positions are set by the user and cannot be recalculated */
 		resize(c, c->prev, 0);
 	}
-	wlr_scene_node_for_each_buffer(&c->scene_surface->node, scenebuffersetopacity, c);
 	arrange(c->mon);
 	printstatus();
 }
@@ -2646,23 +2659,6 @@ setmon(Client *c, Monitor *m, uint32_t newtags)
 		setfloating(c, c->isfloating);
 	}
 	focusclient(focustop(selmon), 1);
-}
-
-void
-setopacity(const Arg *arg)
-{
-	Client *sel = focustop(selmon);
-	if (!sel)
-		return;
-
-	sel->opacity += arg->f;
-	if (sel->opacity > 1.0)
-		sel->opacity = 1.0f;
-
-	if (sel->opacity < 0.1)
-		sel->opacity = 0.1f;
-
-	wlr_scene_node_for_each_buffer(&sel->scene_surface->node, scenebuffersetopacity, sel);
 }
 
 void
@@ -3407,7 +3403,6 @@ createnotifyx11(struct wl_listener *listener, void *data)
 	c->surface.xwayland = xsurface;
 	c->type = X11;
 	c->bw = client_is_unmanaged(c) ? 0 : borderpx;
-	c->opacity = default_opacity;
 
 	/* Listen to the various events it can emit */
 	LISTEN(&xsurface->events.associate, &c->associate, associatex11);
@@ -3459,7 +3454,6 @@ xwaylandready(struct wl_listener *listener, void *data)
 				xcursor->images[0]->hotspot_x, xcursor->images[0]->hotspot_y);
 }
 #endif
-
 int
 main(int argc, char *argv[])
 {

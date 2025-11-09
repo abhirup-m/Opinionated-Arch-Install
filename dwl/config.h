@@ -6,13 +6,13 @@
 /* appearance */
 static const int sloppyfocus               = 1;  /* focus follows mouse */
 static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will disable idle tracking even if it's surface isn't visible  */
-static const int smartgaps                 = 1;  /* 1 means no outer gap when there is only one window */
+static const int smartgaps                 = 0;  /* 1 means no outer gap when there is only one window */
 static int gaps                            = 1;  /* 1 means gaps between windows are added */
 static const unsigned int gappx            = 10; /* gap pixel between windows */
-static const unsigned int borderpx         = 1;  /* border pixel of windows */
+static const unsigned int borderpx         = 3;  /* border pixel of windows */
 static const float rootcolor[]             = COLOR(0x222222ff);
-static const float bordercolor[]           = COLOR(0x444444ff);
-static const float focuscolor[]            = COLOR(0x005677ff);
+static const float bordercolor[]           = COLOR(0xbabbbdff);
+static const float focuscolor[]            = COLOR(0xbd93f9ff);
 static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You can also use glsl colors */
@@ -26,14 +26,17 @@ static int log_level = WLR_ERROR;
 
 /* NOTE: ALWAYS keep a rule declared even if you don't use rules (e.g leave at least one example) */
 static const Rule rules[] = {
-	/* app_id        title         tags     swith float  mon */
-	{NULL,  		"Brave",       1 << 0,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
-	{"pcmanfm",		NULL,          1 << 1,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
+	/* app_id        title         tags    switch float  mon */
+	{NULL,  		"Brave",       1 << 0,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
+	{"pcmanfm",		NULL,          1 << 1,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
 	{"Alacritty",  	"Alacritty",   1 << 2,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
-	{NULL,			"Neovim",      1 << 3,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
+	{"foot",  		"foot",   	   1 << 2,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
+	{"neovim",		NULL,      	   1 << 3,   1,	    0,   -1 }, /* Start on ONLY tag "9" */
 	{"Evince",		NULL,          1 << 4,   1,	    1,   -1 }, /* Start on ONLY tag "9" */
 	{"mpv",			NULL,          		0,   0,	    1,  -1 }, /* Start on ONLY tag "9" */
+	{"gksqt",		NULL,          		0,   0,	    1,  -1 }, /* Start on ONLY tag "9" */
 	{"gscreenshot",	NULL,          		0,   0,	    1,  -1 }, /* Start on ONLY tag "9" */
+	{"xdg-desktop-portal-gtk",	NULL,   0,   0,	    1,  -1 }, /* Start on ONLY tag "9" */
 };
 
 /* layout(s) */
@@ -127,7 +130,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "alacritty", NULL };
+static const char *termcmd[] = { "foot", NULL };
 static const char *menucmd[] = { "fuzzel", NULL };
 
 static const Key keys[] = {
@@ -137,7 +140,8 @@ static const Key keys[] = {
 	{ MODKEY, 					 XKB_KEY_t,     	 spawn,          {.v = termcmd} },
 	{ MODKEY, 					 XKB_KEY_b,     	 spawn,          SHCMD("brave") },
 	{ MODKEY, 					 XKB_KEY_e,     	 spawn,          SHCMD("pcmanfm --name=pcmanfm") },
-	{ MODKEY, 					 XKB_KEY_s,     	 spawn,          SHCMD("alacritty -T Neovim -e nvim") },
+	{ MODKEY, 					 XKB_KEY_s,     	 spawn,          SHCMD("foot -a neovim -T neovim -e nvim") },
+	{ MODKEY, 					 XKB_KEY_p,     	 spawn,          SHCMD("hyprpicker") },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_b,          togglebar,      {0} },
 	{ MODKEY,                    XKB_KEY_Left,          focusstack,     {.i = +1} },
 	{ MODKEY,                    XKB_KEY_Right,          focusstack,     {.i = -1} },
