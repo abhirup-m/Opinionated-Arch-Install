@@ -1,79 +1,98 @@
 /* Colorscheme (jellybeans): */
-@define-color bgcol #282A36;
-@define-color col1 #50FA7B;
-@define-color col2 #FF79C6;
-@define-color purple #b47ede;
-@define-color red #44475A;
-@define-color blue #BD93F9;
-@define-color gray3 #bbbbbb;
-@define-color white #F8F8F2;
-@define-color cyan #BF092F;
+/* @define-color bgcol #1A1B26; */
+/* @define-color white #C0CAF5; */
+/* @define-color col1 #7AA2F7; */
+/* @define-color col2 #BB9AF7; */
+/* @define-color red #F7768E; */
+/* @define-color blue #9ECE6A; */
+/* @define-color cyan #565F89; */
+
+/* Colorscheme (Nocturne Mirage): */
+/* @define-color bgcol    #0E1018; */
+/* @define-color white    #E4E7F5; */
+/* @define-color col1     #5FB0FC; */
+/* @define-color col2     #C679E3; */
+/* @define-color red      #F25C75; */
+/* @define-color blue     #93D482; */
+/* @define-color cyan     #4C566A; */
+
+/* Colorscheme (Kanagawa): */
+@define-color darkfg	#282a36;
+@define-color left 		#282a36;
+@define-color focus 	#ffb86c;
+@define-color name 		#ffb86c;
+@define-color fg 		#f8f8f2;
+@define-color hardware 	#bd93f9;
+@define-color clock 	#282a36;
+@define-color exit 		#f1fa8c;
+@define-color tray 		#282a36;
+@define-color window	#ff79c6;
 
 * {
-	font-family: AgaveNerdFontPropo;
-	font-size: 18px;
-	background-color: @bgcol;
-	color: @white;
-	padding: 0px;
-	margin-top: -6px;
-	margin-bottom: -6px;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	color: @fg;
 }
-#waybar {
-	padding-top: 0px;
-	padding-bottom: 0px;
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    color: white;
 }
 
+.modules-left, .modules-right {
+	margin-top: -4;
+	margin-bottom: -4;
+}
 #cpu, #memory, #battery {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
-	font-weight: bold;
 }
-#clock, #disk, #custom-lock, #custom-logout, #custom-reboot, #custom-poweroff, #tray {
+#clock, #exit > *, #tray > * {
 	padding-left: 20px;
-	padding-right: 20px;
-	/* margin-left: 8px; */
-	/* margin-right: 8px; */
-	font-weight: bold;
+	padding-right: 30px;
 }
 #tray {
 	padding-right: 10px;
 	padding-left: 10px;
-}
-#tray menu > * {
-	padding: 0.7em;
+	background-color: @tray;
 }
 #clock {
-	background-color: @red;
+	color: @fg;
+	background-color: @clock;
+	padding-right: 20px;
 }
 
 #exit * {
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: @col2;
-	color: @bgcol;
+	color: @darkfg;
+	background-color: @exit;
+}
+#exit {
+	padding-right: 10px;
 }
 #hardware * {
-	background-color: @col1;
-	color: @bgcol;
+	background-color: @hardware;
+	color: @darkfg;
+	padding-right: 20px;
 }
 
+#tags {
+    background: @left;
+	padding-right: 10px;
+}
 #tags button > label {
-	opacity: 0.3;
+	font-weight: bold;
 }
 
 #tags button.focused {
-	background-color: @cyan;
+	color: @focus;
 }
 
 #tags button.focused > label {
-	background-color: @cyan;
-}
-
-#tags button.occupied > label {
-	opacity: 1;
-	font-weight: bold;
+	color: @focus;
 }
 
 #tags button {
@@ -83,42 +102,41 @@
 
 #window {
 	margin-left: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: @blue;
-	/* font-style: italic; */
+	padding-left: 10px;
+	padding-right: 15px;
+    background: @window;
 }
-#window * {
-	background-color: @blue;
-	color: @bgcol;
-}
-#custom-right, #custom-left1, #custom-left2, #custom-left3, #custom-left4 {
-	padding: 0;
-	margin: 0;
-}
-#custom-right {
-	font-size: 2em;
-	margin-left: -12px;
-	color: @blue;
-	background-color: @bgcol;
+#window > * {
+	color: @darkfg;
 }
 #custom-left1, #custom-left2, #custom-left3, #custom-left4 {
-	margin-right: -1px;
-	font-size: 2.7em;
+	padding-right: 10px;
+	font-size: 1.4em;
+}
+#custom-right1 {
+	font-size: 1.35em;
+	background-color: @window;
+	color: @left;
+}
+#custom-right2 {
+	padding-left: 10px;
+	font-size: 1.4em;
+	background-color: rgba(255, 255, 255, 0);
+	color: @window;
 }
 #custom-left1 {
-	color: @col1;
-	background-color: @bgcol;
+	background-color: rgba(255, 255, 255, 0);
+	color: @hardware;
 }
 #custom-left2 {
-	color: @red;
-	background-color: @col1;
+	background-color: @hardware;
+	color: @clock;
 }
 #custom-left3 {
-	color: @col2;
-	background-color: @red;
+	background-color: @clock;
+	color: @exit;
 }
 #custom-left4 {
-	color: @bgcol;
-	background-color: @col2;
+	background-color: @exit;
+	color: @tray;
 }

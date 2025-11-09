@@ -1,11 +1,12 @@
 // -*- mode: jsonc -*-
 {
-    "spacing": 0, // Gaps between modules (10px)
+    "spacing": -10, // Gaps between modules (10px)
     // Choose the order of the modules
     "modules-left": [
 		"dwl/tags",
+		"custom/right1",
         "dwl/window",
-		"custom/right"
+		"custom/right2"
     ],
     "modules-center": [
     ],
@@ -28,20 +29,17 @@
 				"battery"
 			]
 	},
-	"custom/right": {
-		"format": ""
-	},
 	"custom/left1": {
-		"format": ""
+		"format": ""
 	},
 	"custom/left2": {
-		"format": ""
+		"format": ""
 	},
 	"custom/left3": {
-		"format": ""
+		"format": ""
 	},
 	"custom/left4": {
-		"format": ""
+		"format": ""
 	},
 	"disk": {
 		"interval": 5,
@@ -69,7 +67,7 @@
         "tooltip-format": "Poweroff."
 	},
 	"cpu": {
-        "format": " {usage}% ",
+        "format": "   {usage}% ",
         "interval": 2,
         "states": {
              "warning": 80,
@@ -80,7 +78,7 @@
 		"num-tags": 6
 	},
 	"dwl/window": {
-		"format": "{title}",
+		"format": "{title} {layout}",
 		"icon": true,
 		"max-length": 50,
 		"on-click": "wayscrot.sh 1",
@@ -93,18 +91,19 @@
              "warning": 60,
              "critical": 75
     	},
-        "format": " {percentage}% ",
+        "format": "   {percentage}% ",
         "tooltip-format": "{used}G used",
         "on-click": "alacritty -e htop"
     },
 	"clock": {
-		"format": " {:%b %d, %I:%M}",
+		"format": "   {:%b %d, %I:%M}",
         "tooltip-format": "<big>{:%A %d}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d/%m/%Y}"
     },
 	"battery": {
-		"format-charging": " {capacity}%",
-		"format-discharging": " {capacity}%"
+		"format-charging": "   {capacity}%",
+		"format-discharging": "   {capacity}%",
+		"format": "   {capacity}%"
 	},
     "tray": {
         "icon-size": 20,
@@ -119,5 +118,11 @@
         "group/exit",
 		"custom/left4",
 		"tray"
-	]
+	],
+	"custom/right1": {
+		"format": ""
+	},
+	"custom/right2": {
+		"format": ""
+	}
 }
