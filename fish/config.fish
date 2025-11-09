@@ -1,6 +1,13 @@
-fish_add_path /usr/local/bin
-fish_add_path $HOME/.local/bin
+set target_paths "/usr/local/bin" "$HOME/.local/bin" "$HOME/storage/texlive/2025/bin/x86_64-linux" "$HOME/storage/.juliaup/bin"
 
+for target_path in $target_paths
+	if test -d "$target_path"
+		# Check if the path is not already in $fish_user_paths to avoid duplicates
+		if not contains "$target_path" $PATH
+			set -gx PATH "$target_path" $PATH
+		end
+	end
+end
 #### ENV VARIABLES ####
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
@@ -15,10 +22,11 @@ set -gx XDG_CACHE_HOME "$HOME/.cache"
 set -gx XDG_DATA_HOME "$HOME/.local/share"
 
 #### ALIASES ####
-alias ls "tree -L 1 -C -h --du -a -D | column"
-alias mpython "$HOME/storage/miniconda3/bin/python"
-alias mpip "$HOME/storage/miniconda3/bin/pip"
-alias grep "grep -i --color=always"
+abbr --add grep "grep -i --color=always"
+abbr --add uvlatest "source ~/.p315/bin/activate.fish"
+abbr --add uvnogil "source ~/.pnogil/bin/activate.fish"
+abbr burn "sudo dd bs=4M conv=fdatasync status=progress if="
+abbr jl "julialauncher"
 
 function ls
     tree -L 1 -C -h --du -a -D $argv | column
