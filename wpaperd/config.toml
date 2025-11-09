@@ -1,5 +1,3 @@
 [default]
 path = "~/storage/pictures/walls/Nature"
 duration = "1m"
-
-[default.transition.cross-zoom]
