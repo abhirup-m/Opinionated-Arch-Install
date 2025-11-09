@@ -35,7 +35,6 @@ end
 #### START WAYLAND COMPOSITOR ####
 if status --is-login
 	if test -z "$DISPLAY" -a $XDG_VTNR = 1
-		pulseaudio --start -D
 		exec dwl -s dwl-start.sh
 	end
 end
