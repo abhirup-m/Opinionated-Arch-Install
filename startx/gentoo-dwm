@@ -1,0 +1,12 @@
+picom &
+nm-applet &
+walldaemon &
+pasystray &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+udiskie -ans &
+dwm-status &
+blueman-applet &
+blueman-tray &
+while true; do
+	dwm
+done

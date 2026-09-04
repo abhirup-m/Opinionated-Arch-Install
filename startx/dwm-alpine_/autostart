@@ -1,0 +1,8 @@
+picom
+nm-applet
+walldaemon
+pipewire
+pipewire-pulse
+wireplumber
+pasystray
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

@@ -1,0 +1,14 @@
+while :; do
+	killall picom; picom -b
+	killall nm-applet; nm-applet &
+	killall walldaemon; walldaemon &
+	killall pipewire; pipewire &
+	killall pipewire-pulse; pipewire-pulse &
+	killall wireplumber; wireplumber &
+	killall pasystray; pasystray &
+	killall /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+	killall pasystray; pasystray &
+	killall udiskie; udiskie -ns -f thunar &
+	killall dwm-status; dwm-status &
+	dbus-run-session dwm
+done

@@ -1,0 +1,1228 @@
+xauth:  file /home/alpine/.serverauth.11064 does not exist
+
+
+X.Org X Server 1.21.1.21
+X Protocol Version 11, Revision 0
+Current Operating System: Linux TheBasement 6.19.8-0-stable #1-Alpine SMP PREEMPT_DYNAMIC 2026-03-13 17:03:22 x86_64
+Kernel command line: initrd=\AlpineLinux\initramfs root=LABEL=ALPINE modules=ext4 rw quiet
+ 
+Current version of pixman: 0.46.4
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/home/alpine/.local/share/xorg/Xorg.0.log", Time: Sun Apr 12 00:17:07 2026
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86OK
+> Warning:          Could not resolve keysym XF86GoTo
+> Warning:          Could not resolve keysym XF86VendorLogo
+> Warning:          Could not resolve keysym XF86MediaSelectProgramGuide
+> Warning:          Could not resolve keysym XF86MediaSelectProgramGuide
+> Warning:          Could not resolve keysym XF86MediaSelectHome
+> Warning:          Could not resolve keysym XF86MediaLanguageMenu
+> Warning:          Could not resolve keysym XF86MediaTitleMenu
+> Warning:          Could not resolve keysym XF86AudioChannelMode
+> Warning:          Could not resolve keysym XF86MediaSelectPC
+> Warning:          Could not resolve keysym XF86MediaSelectTV
+> Warning:          Could not resolve keysym XF86MediaSelectCable
+> Warning:          Could not resolve keysym XF86MediaSelectVCR
+> Warning:          Could not resolve keysym XF86MediaSelectVCRPlus
+> Warning:          Could not resolve keysym XF86MediaSelectSatellite
+> Warning:          Could not resolve keysym XF86MediaSelectCD
+> Warning:          Could not resolve keysym XF86MediaSelectTape
+> Warning:          Could not resolve keysym XF86MediaSelectRadio
+> Warning:          Could not resolve keysym XF86MediaSelectTuner
+> Warning:          Could not resolve keysym XF86MediaPlayer
+> Warning:          Could not resolve keysym XF86MediaSelectTeletext
+> Warning:          Could not resolve keysym XF86MediaSelectAuxiliary
+> Warning:          Could not resolve keysym XF86MediaPlaySlow
+> Warning:          Could not resolve keysym XF86NumberEntryMode
+> Warning:          Could not resolve keysym XF86RefreshRateToggle
+> Warning:          Could not resolve keysym XF86Accessibility
+> Warning:          Could not resolve keysym XF86DoNotDisturb
+Errors from xkbcomp are not fatal to the X server
+
+(nm-applet:11101): nm-applet-WARNING **: 00:17:08.335: Error connecting to system D-Bus: Could not connect: No such file or directory
+
+(nm-applet:11101): nm-applet-WARNING **: 00:17:08.335: Could not connect: No such file or directory
+
+(nm-applet:11101): nm-CRITICAL **: 00:17:08.338: ((../src/libnm-client-impl/nm-client.c:4117)): assertion '<dropped>' failed
+
+(nm-applet:11101): nm-CRITICAL **: 00:17:08.338: ((../src/libnm-client-impl/nm-client.c:4068)): assertion '<dropped>' failed
+
+(nm-applet:11101): nm-CRITICAL **: 00:17:08.355: ((../src/libnm-client-impl/nm-client.c:4948)): assertion '<dropped>' failed
+[E][00:17:09.180146] mod.rt       | [     module-rt.c:  294 pw_rtkit_bus_get()] Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+[E][00:17:09.180282] mod.rt       | [     module-rt.c:  294 pw_rtkit_bus_get()] Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[W][00:17:09.180292] mod.rt       | [     module-rt.c:  975 rtkit_get_bus()] Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+[E][00:17:09.180496] mod.protocol-native | [module-protocol-:  756 init_socket_name()] server 0x7fa2f79c3cd0: name pipewire-0 is not an absolute path and no runtime dir found. Set one of PIPEWIRE_RUNTIME_DIR, XDG_RUNTIME_DIR or USERPROFILE in the environment
+[E][00:17:09.180540] pw.conf      | [          conf.c:  602 load_module()] 0x7fa2f79ca030: could not load mandatory module "libpipewire-module-protocol-native": No such file or directory
+[E][00:17:09.180637] default      | [      pipewire.c:  124 main()] failed to create context: No such file or directory
+11099
+E 00:17:11.197240             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:11.197408             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:11.197420             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:17.221904             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:17.222031             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:17.222042             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown str ESC]7
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:17:23.252614             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:23.252752             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:23.252764             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:29.278083             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:29.278226             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:29.278240             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:35.301133             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:35.301293             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:35.301307             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:41.329427             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:41.329557             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:41.329580             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:47.353740             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:47.353879             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:47.353889             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:53.377461             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:53.377601             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:53.377612             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:17:59.400302             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:17:59.400443             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:17:59.400455             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:05.424126             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:05.424290             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:05.424302             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:11.449008             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:11.449147             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:11.449159             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:17.472019             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:17.472163             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:17.472218             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:23.499493             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:23.499635             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:23.499646             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:29.527995             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:29.528140             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:29.528151             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:35.552305             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:35.552447             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:35.552458             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:41.576837             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:41.576975             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:41.576986             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:47.600744             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:47.600884             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:47.600900             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:53.625440             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:53.625571             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:53.625586             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:18:59.649163             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:18:59.649328             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:18:59.649339             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:05.675385             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:05.675513             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:05.675524             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:11.700931             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:11.701062             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:11.701073             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:17.727712             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:17.727843             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:17.727855             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:23.753576             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:23.753705             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:23.753720             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:29.778409             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:29.778536             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:29.778552             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:35.806248             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:35.806407             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:35.806418             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:41.829199             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:41.829345             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:41.829356             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:47.857240             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:47.857389             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:47.857400             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:53.881821             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:53.881952             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:53.881963             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:19:59.908227             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:19:59.908389             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:19:59.908405             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:05.935459             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:05.935591             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:05.935606             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:11.959457             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:11.959587             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:11.959610             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:17.982852             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:17.982986             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:17.982998             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:24.010670             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:24.010826             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:24.010839             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:30.036350             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:30.036488             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:30.036504             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:36.060852             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:36.060982             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:36.060998             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:42.084813             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:42.084948             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:42.084963             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:48.110677             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:48.110810             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:48.110826             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:20:54.134267             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:20:54.134393             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:20:54.134404             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:00.157409             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:00.157542             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:00.157558             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:06.181069             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:06.181213             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:06.181231             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:12.206531             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:12.206665             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:12.206680             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:18.231597             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:18.231842             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:18.231880             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:24.256445             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:24.256590             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:24.256605             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:30.280076             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:30.280234             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:30.280267             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:36.308551             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:36.308787             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:36.308826             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:42.333941             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:42.334087             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:42.334103             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:48.384020             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:48.384161             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:48.384176             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:21:54.407546             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:21:54.407687             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:21:54.407703             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:00.432087             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:00.432241             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:00.432264             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:06.455623             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:06.455768             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:06.455779             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:12.479558             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:12.479800             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:12.479821             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:18.502522             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:18.502753             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:18.502775             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:24.527301             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:24.527441             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:24.527452             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:30.551541             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:30.551685             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:30.551697             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:36.577517             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:36.577755             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:36.577776             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:42.602177             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:42.602349             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:42.602374             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:48.628901             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:48.629045             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:48.629057             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:22:54.652493             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:22:54.652635             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:22:54.652646             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:00.676006             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:00.676146             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:00.676156             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:06.699810             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:06.699952             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:06.699962             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:12.727150             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:12.727321             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:12.727332             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:18.754532             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:18.754772             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:18.754810             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:24.783462             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:24.783600             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:24.783611             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:30.807137             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:30.807298             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:30.807312             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:36.832416             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:36.832562             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:36.832573             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:42.856364             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:42.856556             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:42.856567             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:48.882890             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:48.883029             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:48.883040             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:23:54.908287             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:23:54.908431             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:23:54.908447             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:00.935723             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:00.935861             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:00.935873             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:06.959750             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:06.959888             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:06.959899             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:12.986848             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:12.986986             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:12.986997             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:19.009806             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:19.009944             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:19.009955             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:25.033938             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:25.034074             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:25.034085             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:31.057713             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:31.057856             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:31.057872             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:37.085826             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:37.085981             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:37.085992             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:43.108129             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:43.108286             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:43.108301             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:49.130926             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:49.131066             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:49.131077             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:24:55.155327             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:24:55.155466             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:24:55.155477             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:01.201996             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:01.202132             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:01.202143             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:07.226637             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:07.226781             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:07.226797             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:13.253275             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:13.253419             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:13.253443             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:19.277844             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:19.277984             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:19.277995             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:25.300911             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:25.301050             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:25.301061             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:31.325576             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:31.325711             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:31.325723             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:37.349754             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:37.349893             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:37.349903             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:43.374959             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:43.375098             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:43.375114             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:49.399354             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:49.399497             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:49.399513             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:25:55.423375             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:25:55.423517             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:25:55.423529             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:01.446534             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:01.446675             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:01.446687             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:07.471043             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:07.471180             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:07.471201             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:13.495629             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:13.495760             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:13.495776             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:19.520476             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:19.520720             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:19.520758             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:25.545436             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:25.545686             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:25.545725             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:31.570012             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:31.570159             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:31.570171             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:37.593519             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:37.593762             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:37.593783             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:43.619937             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:43.620081             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:43.620092             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:49.644516             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:49.644660             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:49.644675             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:26:55.670050             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:26:55.670199             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:26:55.670214             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:01.696249             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:01.696403             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:01.696419             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:07.720816             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:07.720969             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:07.720980             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:13.744680             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:13.744822             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:13.744834             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:19.767830             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:19.767966             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:19.767978             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:25.792124             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:25.792285             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:25.792310             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:31.817015             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:31.817157             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:31.817172             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:37.843219             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:37.843392             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:37.843407             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:43.866581             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:43.866723             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:43.866747             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:49.892071             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:49.892217             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:49.892231             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:27:55.915179             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:27:55.915337             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:27:55.915353             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:01.938416             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:01.938558             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:01.938574             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:07.961898             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:07.962041             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:07.962057             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:13.989710             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:13.989853             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:13.989869             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:20.015134             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:20.015296             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:20.015313             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:26.039440             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:26.039576             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:26.039587             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:32.062627             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:32.062768             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:32.062783             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:38.086623             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:38.086768             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:38.086783             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:44.110246             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:44.110413             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:44.110428             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:50.134177             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:50.134350             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:50.134366             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:28:56.158062             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:28:56.158220             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:28:56.158237             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:02.180288             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:02.180427             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:02.180438             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:08.203116             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:08.203276             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:08.203293             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:14.226361             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:14.226511             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:14.226527             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:20.249958             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:20.250102             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:20.250117             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:26.272023             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:26.272167             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:26.272196             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:32.295048             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:32.295200             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:32.295217             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:38.319112             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:38.319290             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:38.319303             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:44.345236             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:44.345397             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:44.345408             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:50.369277             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:50.369417             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:50.369428             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:29:56.391611             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:29:56.391749             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:29:56.391760             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:02.414464             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:02.414603             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:02.414614             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:08.437503             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:08.437641             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:08.437653             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:14.461513             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:14.461657             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:14.461680             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:20.488723             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:20.488864             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:20.488875             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:26.513109             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:26.513268             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:26.513288             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:32.534966             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:32.535105             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:32.535117             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:38.559124             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:38.559300             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:38.559312             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:44.583989             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:44.584127             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:44.584138             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:50.607392             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:50.607533             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:50.607548             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:30:56.630418             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:30:56.630555             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:30:56.630566             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:02.655360             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:02.655517             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:02.655529             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:08.679300             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:08.679440             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:08.679451             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:14.702786             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:14.702927             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:14.702939             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:20.728824             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:20.728955             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:20.728971             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:26.756019             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:26.756160             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:26.756176             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:32.779430             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:32.779571             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:32.779583             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:38.804444             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:38.804582             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:38.804593             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:44.829206             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:44.829359             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:44.829370             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:50.854888             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:50.855031             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:50.855043             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:31:56.877683             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:31:56.877826             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:31:56.877842             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:32:02.901292             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:02.901424             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:02.901439             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+E 00:32:08.928415             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:08.928543             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:08.928554             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+E 00:32:14.954284             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:14.954421             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:14.954433             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:32:20.980106             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:20.980263             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:20.980283             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:32:27.006104             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:27.006264             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:27.006282             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:32:33.029163             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:33.029335             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:33.029347             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:32:39.053879             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:39.054012             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:39.054024             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+E 00:32:45.077695             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:45.077823             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:45.077834             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:32:51.101820             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:51.101950             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:51.101961             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+(II) AIGLX: Suspending AIGLX clients for VT switch
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+11099
+E 00:32:57.127496             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:32:57.127625             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:32:57.127636             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:33:03.150947             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:03.151089             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:03.151101             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:33:09.174998             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:09.175123             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:09.175134             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:33:15.199956             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:15.200083             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:15.200094             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:33:21.223273             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:21.223405             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:21.223416             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:33:27.248970             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:27.249093             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:27.249104             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:33:33.328356             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:33.328496             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:33.328508             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:33:39.352652             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:39.352816             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:39.352827             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+11099
+E 00:33:45.377404             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:45.377543             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:45.377554             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:33:51.402829             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:51.402956             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:51.423019             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:33:57.447688             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:33:57.447833             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:33:57.447849             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:34:03.472072             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:03.472222             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:03.472253             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+E 00:34:09.498107             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:09.498360             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:09.498404             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:34:15.526152             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:15.526308             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:15.526319             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+E 00:34:21.550008             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:21.550140             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:21.550155             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+E 00:34:27.573493             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:27.573620             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:27.573632             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+(II) AIGLX: Suspending AIGLX clients for VT switch
+11099
+E 00:34:33.598167             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:33.598322             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:33.598334             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:34:39.620770             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:39.620904             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:39.620915             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+11099
+E 00:34:45.644486             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to session bus: /usr/bin/dbus-launch terminated abnormally without any error message
+E 00:34:45.644625             mod.rt ../src/modules/module-rt.c:294:pw_rtkit_bus_get: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+W 00:34:45.644637             mod.rt ../src/modules/module-rt.c:975:rtkit_get_bus: Realtime scheduling disabled: insufficient realtime privileges, Portal not found on session bus, and no system bus for RTKit: Connection refused
+Could not connect to PipeWire
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+11099
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;1m
+erresc: unknown csi ESC[=5u
+erresc: unknown str ESC]133
+erresc: unknown csi ESC[>4;0m
+erresc: unknown csi ESC[=0u
+xinit: connection to X server lost
+
+waiting for X server to shut down erresc: unknown str ESC]133
+.XIO:  fatal IO error 104 (Connection reset by peer) on X server ":0"
+      after 16851 requests (16609 known processed) with 0 events remaining.
+(II) Server terminated successfully (0). Closing log file.
+

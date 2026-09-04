@@ -1,0 +1,77 @@
+#!/bin/python
+
+import subprocess
+from datetime import datetime
+import time
+import os
+
+MEMORY = "/proc/meminfo"
+CPU = "/proc/stat"
+BATTERY_NOW = "/sys/class/power_supply/BAT0/energy_now"
+BATTERY_FULL = "/sys/class/power_supply/BAT0/energy_full"
+BATTERY_STAT = "/sys/class/power_supply/BAT0/status"
+
+SPACER = "    "
+def calender():
+    now = datetime.now()
+    return " " + now.strftime("%a %b %d,%H:%M")
+
+def ram():
+    mem = ""
+    with open(MEMORY, "r") as f:
+    	contents = {line.split(":")[0].strip(): int(line.split(":")[1].strip().split(" ")[0].strip()) for line in f.read().split("\n") if len(line) > 0}
+    	mem = f" {(100 * contents["MemFree"] / contents["MemTotal"]):.0f}%"
+    return mem
+    
+def cpu():
+    with open(CPU, "r") as f:
+    	cpuLine1 = f.read().split("\n")[0].split(" ")[1:]
+    cpuLine1 = [i for i in cpuLine1 if len(i) > 0]
+    time.sleep(1)
+    with open(CPU, "r") as f:
+    	cpuLine2 = f.read().split("\n")[0].split(" ")[1:]
+    cpuLine2 = [i for i in cpuLine2 if len(i) > 0]
+    deltaIdle = int(cpuLine2[3]) - int(cpuLine1[3])
+    deltaTotal = sum([int(n) for n in cpuLine2]) - sum([int(n) for n in cpuLine1])
+    return f" {(100 * (1 - deltaIdle / deltaTotal)):.0f}%"
+    
+def battery():
+    batFull = int(open(BATTERY_FULL, "r").read())
+    batNow = int(open(BATTERY_NOW, "r").read())
+    batStat = open(BATTERY_STAT, "r").read().strip()
+    icon = "" if batStat == "Charging" else ""
+    return f"{icon} {(100 * batNow / batFull):.0f}%"
+    
+def mic():
+    try:
+        ps = subprocess.Popen(('wpctl', 'status'), stdout=subprocess.PIPE)
+        output = subprocess.check_output(('grep', 'Digital Microphone'), stdin=ps.stdout, text=True)
+        ps.wait()
+        if "MUTED" in output:
+            return f""
+        else:
+            return f""
+    except subprocess.CalledProcessError:
+        return
+    
+parent = os.path.dirname(os.path.abspath(__file__))
+autoStartProcesses = open(os.path.join(parent, "autostart"), "r").read().strip().split("\n")
+procs = []
+for proc in autoStartProcesses:
+    if subprocess.run(("pgrep", proc)).returncode == 0:
+        subprocess.run(["kill", proc])
+    time.sleep(0.5)
+    procs.append(subprocess.Popen(proc.split(" ")))
+time.sleep(1)
+while subprocess.run(("pgrep", "dwm")).returncode == 0:
+    status = "" 
+    status += calender() + SPACER
+    status += ram() + SPACER 
+    status += cpu() + SPACER 
+    status += battery() + SPACER 
+    status += mic()
+    subprocess.run(["xsetroot", "-name", status])
+    time.sleep(5)
+for proc in procs:
+    time.sleep(0.5)
+    proc.kill()
