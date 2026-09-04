@@ -1,0 +1,3 @@
+while :; do
+	dwm &
+done
